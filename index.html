@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Flexbox CSS</h1>
+
+
+    <div class="top">
+        <div class="example example-definition">
+            <h2>Qu'est ce que Flexbox?</h2>
+            <div class="example-content">
+                <p>Flexbox (pour flexible box) est un mode de mise en page prévoyant une disposition des éléments d’une page
+                    de telle sorte que ces éléments possèdent un comportement prévisible lorsqu’ils doivent s’accommoder
+                    de différentes tailles d’écrans/appareils. Dans de nombreux cas, le modèle de boîte Flexbox offre une
+                    amélioration du modèle block dans lequel les flottements (float) ne sont pas utilisés, pas plus que la
+                    fusion des marges du conteneur flex avec ses éléments.
+                </p>
+                <cite><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Disposition_des_bo%C3%AEtes_flexibles_CSS/Utilisation_des_flexbox_en_CSS" target="_blank">mdn</a></cite>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="containerLink">
+            <a href="mosaic.html" target="_blank">Voir un exemple</a>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <div class="default1">
+            <div class="example example-default">
+                <h2>Display: none</h2>
+                <div class="example-content">
+                    <div class="parent">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="default2">
+            <div class="cssTitle">
+                CSS
+            </div>
+            <div class="cssBo">
+                <textarea cols="50" rows="5" readonly>
+
+        .container {
+            display : none;
+        }
+                    </textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container1">
+        <div class="default1">
+            <div class="example example-flex">
+                <h2>Display: flex</h2>
+                <div class="example-content">
+                    <div class="parent">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="default2">
+            <div class="cssTitle">
+                CSS
+            </div>
+            <div class="cssBo">
+                <textarea cols="50" rows="5" readonly>
+
+        .container {
+            display : flex;
+        }
+                    </textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container1">
+        <div class="default1">
+            <div class="example example-direction">
+                <h2>row-reverse</h2>
+                <div class="example-content">
+                    <div class="parent">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="default2">
+            <div class="cssTitle">
+                CSS
+            </div>
+            <div class="cssBo">
+                <textarea cols="50" rows="6" readonly>
+
+        .container {
+            display : flex;
+            flex-direction : row-reverse;
+        }
+                    </textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container1">
+        <div class="default1">
+            <div class="example example-wrap">
+                <h2>flex-wrap</h2>
+                <div class="example-content">
+                    <div class="parent">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="default2">
+            <div class="cssTitle">
+                CSS
+            </div>
+            <div class="cssBo">
+                <textarea cols="50" rows="6" readonly>
+
+        .container {
+            display : flex;
+            flex-direction : wrap;
+        }
+                    </textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container1">
+        <div class="default1">
+            <div class="example example-justify">
+                <h2>justify-content</h2>
+                <div class="example-content">
+                    <div class="parent">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="default2">
+            <div class="cssTitle">
+                CSS
+            </div>
+            <div class="cssBo">
+                <textarea cols="50" rows="6" readonly>
+
+        .container {
+            display : flex;
+            justify-content : space-around;
+        }
+                    </textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-align">
+            <h2>align-items</h2>
+            <div class="example-content">
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="7" readonly>
+
+        .container {
+            display : flex;
+            justify-content : space-around;
+            align-items : flex-end;
+        }
+                    </textarea>
+        </div>
+    </div>
+</div>
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-align-content">
+            <h2>align-content</h2>
+            <div class="example-content">
+
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="7" readonly>
+
+        .container {
+            display : flex;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+                    </textarea>
+        </div>
+    </div>
+</div>
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-order">
+            <h2>order</h2>
+            <div class="example-content">
+
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="9" readonly>
+
+        .container {
+            display : flex;
+        }
+
+        .item:nth-child(2) {
+            order : 1;
+        }
+                    </textarea>
+        </div>
+    </div>
+</div>
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-grow">
+            <h2>flex-grow</h2>
+            <div class="example-content">
+
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="9" readonly>
+
+        .container {
+            display : flex;
+        }
+
+        .item:nth-child(2) {
+            flex-grow : 1;
+        }
+                    </textarea>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-shrink">
+            <h2>flex-shrink</h2>
+            <div class="example-content">
+
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="9" readonly>
+
+        .container {
+            display : flex;
+        }
+
+        .item:nth-child(2) {
+            flex-shrink : 2;
+        }
+                    </textarea>
+        </div>
+        </textarea>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-basis">
+            <h2>flex-basis</h2>
+            <div class="example-content">
+
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="10" readonly>
+
+        .container {
+            display : flex;
+            flex-direction: column;
+        }
+
+        .item:nth-child(2) {
+            flex-basis : 100px;
+        }
+                    </textarea>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container1">
+    <div class="default1">
+        <div class="example example-align-self">
+            <h2>align-self</h2>
+            <div class="example-content">
+
+                <div class="parent">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="default2">
+        <div class="cssTitle">
+            CSS
+        </div>
+        <div class="cssBo">
+            <textarea cols="50" rows="10" readonly>
+
+        .container {
+            display : flex;
+            justify-content: space-between;
+        }
+
+        .item:nth-child(2) {
+            align-self: flex-end;
+        }
+                    </textarea>
+        </div>
+    </div>
+</div>
+<footer>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+/* font-family: 'Ubuntu', sans-serif; */
+/* bleu fond : 01538f, */
+/* orange : #e57f00 */
+/* bleu foncé : #00101C */
+/* gris foncé : #272822 */
+
+
+body {
+    background-color: #01538f;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+cite {
+    float: right;
+}
+
+.parent {
+  border: 5px solid #00101C;
+  width: 400px;
+  margin: 0;
+}
+
+
+.item {
+  margin: 5px;
+  background: #00101C;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.cssTitle {
+    text-align: none;
+    margin-top: 30px;
+}
+
+.cssBo {
+    color: black;
+
+}
+
+textarea {
+    background-color: #272822;
+    border: none;
+    color: white;
+    resize: none;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-grow : 1;
+}
+
+.example-content {
+  justify-content: center;
+}
+
+.example-content>p{
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerLink a {
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border: 2px white solid;
+    padding: 10px;
+}
+
+.containerLink a:hover{
+    background-color:#e57f00;
+}
+
+/**** definition top ****/
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.example-definition{
+    width: 40%;
+}
+
+
+/**** display: none / default ****/
+
+.default1 {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.default2 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.example .example-default {
+    justify-content: center;
+    display: flex;
+
+}
+
+
+/**** display: flex ****/
+
+.example-flex .parent {
+  display: flex;
+}
+
+.example-flex .item {
+  width: 50px;
+}
+
+
+/**** flex-direction ****/
+
+.example-direction .parent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.example-direction .item {
+  width: 50px;
+}
+
+
+/**** flex-wrap ****/
+
+.example-wrap .parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-wrap .item {
+  width: 30%;
+}
+
+
+/**** justify-content ****/
+
+.example.example-justify {
+    margin-top: 25px;
+}
+
+.example-justify .parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example-justify .item {
+  width: 50px;
+}
+
+
+/**** align-items ****/
+
+.example-align .parent {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+}
+
+.example-align .item {
+  width: 50px;
+}
+
+
+/**** align-content ****/
+
+.example-align-content .parent {
+  height: 200px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.example-align-content .item {
+  width: 20%;
+}
+
+
+/**** order ****/
+
+.example.example-order {
+    margin-top: 50px;
+}
+
+.example-order .parent {
+  display: flex;
+}
+
+.example-order .item {
+  width: 50px;
+}
+
+.example-order .item:nth-child(2) {
+  order: 1;
+  background: #e57f00;
+}
+
+
+/**** flex-grow ****/
+
+.example.example-grow {
+    margin-top: 45px;
+}
+
+.example-grow .parent {
+  display: flex;
+}
+
+.example-grow .item {
+  width: 50px;
+}
+
+.example-grow .item:nth-child(2) {
+  flex-grow: 1;
+  background: #e57f00;
+}
+
+
+/**** flex-shrink ****/
+
+.example.example-shrink {
+    margin-top: 40px;
+}
+
+.example-shrink .parent {
+  display: flex;
+}
+
+.example-shrink .item {
+  width: 200px;
+}
+
+.example-shrink .item:nth-child(2) {
+  flex-shrink: 2;
+  background: #e57f00;
+}
+
+
+
+/**** flex-basis ****/
+
+.example-basis .parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-basis .item {
+  width: 200px;
+}
+
+.example-basis .item:nth-child(2) {
+  flex-basis: 100px;
+  background: #e57f00;
+}
+
+
+
+/**** align-self ****/
+
+.example-align-self .parent {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-align-self .item {
+  width: 50px;
+  height: 50px;
+}
+
+.example-align-self .item:nth-child(2) {
+  align-self: flex-end;
+  background: #e57f00;
+}
+
+
+/**** footer ****/
+
+footer {
+    height: 100px;
+}
+
+/**** media ****/
+
+@media (max-width: 900px) {
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-definition{
+    width: 80%;
+}
+
+.example {
+  margin-top: 40px;
+}
+
+.default2 {
+  display: flex;
+}
+
+.cssBo {
+  justify-content: center;
+  display: flex;
+}
+
+textarea {
+  justify-content: center;
+  width: 80%
+}
+
+.parent {
+  border: 5px solid #00101C;
+  width: 300px;
+}
+
