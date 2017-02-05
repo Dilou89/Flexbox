@@ -9,6 +9,8 @@ body {
     background-color: #01538f;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -310,9 +312,16 @@ footer {
 /**** media ****/
 
 @media (max-width: 900px) {
+
+body {
+  display:flex;
+  flex-direction: column;
+}
+
 .container1 {
     display: flex;
     flex-direction: column;
+    flex-grow: none;
 }
 
 .example-definition{
@@ -323,8 +332,14 @@ footer {
   margin-top: 40px;
 }
 
+.default1{
+  display: flex;
+  flex-basis: none
+}
+
 .default2 {
   display: flex;
+  flex-basis: none;
 }
 
 .cssBo {
